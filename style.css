@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,400&family=Varela+Round&display=swap');
+/* -------------- */
+/* Picalili Reset */
+/* -------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+*:focus:not(.focus-visible) {
+    outline: none;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* -------------- */
+/* Globals */
+/* -------------- */
+
+:root {
+    --primary: #000e62;
+    --secondary: #0067fc;
+    --accent: #00cbfe;
+    --dark: #404e64;
+
+    --ff-leading: 'Cabin', sans-serif;
+    --ff-paragraph: 'Varela Round', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff-paragraph);
+    font-weight: 400;
+    color: var(--dark);
+    padding-block: 5rem;
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--ff-leading);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 6.5rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+
+}
+
+.btn {
+    background-color: var(--secondary);
+    color: #fff;
+    padding: .5em 1.5em;
+    font-size: 1.6rem;
+    border-radius: 20px;
+}
+
+.image {
+    width: 650px;
+}
+
+.link {
+    color: var(--accent);
+}
+
+.container {
+    width: min(1100px, 85%);
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.min-100 {
+    min-height: 100vh;
+}
+
+.mgt-10 {
+    margin-top: 10rem;
+}
+
+.mgt-5 {
+    margin-top: 5rem;
+}
+
+.mgt-2 {
+    margin-top: 2rem;
+}
+
+.mgowl-5>*+* {
+    margin-top: 5rem;
+}
+
+.mginline-3 {
+    margin-inline: 20rem;
+}
+
+/* -------------- */
+/* Header */
+/* -------------- */
+
+.main-heading {
+    justify-content: space-between;
+    width: min(1300px, 85%);
+    margin: auto;
+}
+
+.main-heading > nav {
+    justify-content: space-evenly;
+    gap: 6rem;
+}
+
+
+/* -------------- */
+/* Main */
+/* -------------- */
+
+.main-content {
+    justify-content: space-between;
+    gap: 18rem;
+}
+
+/* -------------- */
+/* First Section */
+/* -------------- */
+
+.first-section {
+    text-align: center;
+}
