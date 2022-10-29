@@ -149,6 +149,11 @@ p {
     border-radius: 20px;
 }
 
+.btn-light {
+    background-color: #fff;
+    color: var(--secondary);
+}
+
 .accent-bg {
     background-color: var(--accent-bg);
     padding-block: 10rem;
@@ -273,19 +278,84 @@ p {
 /* Third & Fourth Section */
 /* -------------- */
 
-.third-section--card {
+.third-section--card,
+.fourth-section--card {
     justify-content: space-between;
 }
 
-.third-section--card div {
+.third-section--card div,
+.fourth-section--card div {
     width: 40%;
 }
 
-.third-section h3 {
+.third-section h3,
+.fourth-section h3 {
     font-size: 4.5rem;
     margin-bottom: 3rem;
 }
 
-.third-section--card figure {
+.third-section--card figure,
+.fourth-section--card figure {
     width: 45%;
+}
+
+/* -------------- */
+/* Fifth Section */
+/* -------------- */
+
+.checkboxes {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.checkboxes>label {
+    padding: .9rem 2rem;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.fifth-section {
+    justify-content: space-between;
+}
+
+.fifth-section--content {
+    width: 40%;
+}
+
+.fifth-section figure {
+    width: 50%;
+}
+
+/* -------------- */
+/* Aside */
+/* -------------- */
+
+.aside-info {
+    background: url(./assets/images/Image-7.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: var(--secondary);
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 30%;
+    text-align: center;
+}
+
+.aside-info h2 {
+    color: #fff;
+}
+
+.aside-info p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.aside-info a.btn-light {
+    padding: .6em 2.8em;
 }
