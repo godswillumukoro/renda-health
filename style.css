@@ -91,6 +91,7 @@ select {
     --primary: #000e62;
     --secondary: #0067fc;
     --accent: #00cbfe;
+    --accent-bg: #f8fbff;
     --dark: #404e64;
 
     --ff-leading: 'Cabin', sans-serif;
@@ -108,13 +109,16 @@ body {
     padding-block: 5rem;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--ff-leading);
     font-weight: 700;
     color: var(--primary);
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 1.6rem;
     display: inline-block;
@@ -126,6 +130,10 @@ h1 {
 
 h2 {
     font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
 }
 
 p {
@@ -141,8 +149,13 @@ p {
     border-radius: 20px;
 }
 
+.accent-bg {
+    background-color: var(--accent-bg);
+    padding-block: 10rem;
+}
+
 .image {
-    width: 650px;
+    width: 900px;
 }
 
 .link {
@@ -175,6 +188,10 @@ p {
     margin-top: 2rem;
 }
 
+.mgowl-10>*+* {
+    margin-top: 15rem;
+}
+
 .mgowl-5>*+* {
     margin-top: 5rem;
 }
@@ -193,7 +210,7 @@ p {
     margin: auto;
 }
 
-.main-heading > nav {
+.main-heading>nav {
     justify-content: space-evenly;
     gap: 6rem;
 }
@@ -214,4 +231,61 @@ p {
 
 .first-section {
     text-align: center;
+}
+
+/* -------------- */
+/* Second Section */
+/* -------------- */
+
+.second-section-leading {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.second-section-leading a {
+    margin-bottom: 1.2rem;
+}
+
+.cards {
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.cards img {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin: auto;
+    border: 4px solid var(--accent);
+}
+
+.card {
+    padding: 5rem 2rem;
+    background-color: #fff;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+}
+
+/* -------------- */
+/* Third & Fourth Section */
+/* -------------- */
+
+.third-section--card {
+    justify-content: space-between;
+}
+
+.third-section--card div {
+    width: 40%;
+}
+
+.third-section h3 {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.third-section--card figure {
+    width: 45%;
 }
